@@ -56,7 +56,7 @@ namespace BingBackgroundChanger
 
         public void changeBackground()
         {
-            SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, imageFileName, SPIF_UPDATEINIFILE);
+            SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "C:\\Users\\" + Environment.UserName + "\\Documents\\currentbackground.jpg", SPIF_UPDATEINIFILE);
         }
 
     }
